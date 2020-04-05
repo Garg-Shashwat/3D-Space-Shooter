@@ -3234,6 +3234,7 @@ GameObject:
   - component: {fileID: 699536828}
   - component: {fileID: 699536827}
   - component: {fileID: 699536832}
+  - component: {fileID: 699536833}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3254,7 +3255,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Score: {fileID: 432956310}
-  Best: {fileID: 0}
   GameOver: {fileID: 1564736806}
   RestartImg: {fileID: 1057726708}
   LivesSprites:
@@ -3371,6 +3371,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &699536833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699536826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a2682ab2fdb534468eb70d79acc5fbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highscores: []
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -3444,7 +3457,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 2.507e-42, y: 1.02e-43, z: 8.31e-43, w: 0}
+  m_BoundingSphereOverride: {x: 1.648e-42, y: 1.05e-43, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
