@@ -1264,7 +1264,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: -8.784729}
+  m_AnchoredPosition: {x: -0.000061035156, y: -8.7846985}
   m_SizeDelta: {x: 450, y: 242.24902}
   m_Pivot: {x: 0.49999997, y: 0.5}
 --- !u!114 &388168748
@@ -2024,6 +2024,7 @@ GameObject:
   - component: {fileID: 699536828}
   - component: {fileID: 699536827}
   - component: {fileID: 699536832}
+  - component: {fileID: 699536833}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2044,7 +2045,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Score: {fileID: 432956310}
-  Best: {fileID: 0}
   GameOver: {fileID: 1564736806}
   RestartImg: {fileID: 1057726708}
   LivesSprites:
@@ -2159,6 +2159,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &699536833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699536826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a2682ab2fdb534468eb70d79acc5fbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highscores: []
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -3201,7 +3214,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -5.8565063}
+  m_AnchoredPosition: {x: 0, y: -5.856476}
   m_SizeDelta: {x: 66, y: -61.750916}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &994613707
@@ -6330,7 +6343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -8.784729}
+  m_AnchoredPosition: {x: 0, y: -8.7846985}
   m_SizeDelta: {x: 450, y: 242.24902}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1843744980
