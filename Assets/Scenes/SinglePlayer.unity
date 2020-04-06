@@ -153,6 +153,7 @@ MonoBehaviour:
   Enemy: {fileID: 1015864458718546654, guid: 1b4480aa504718e408d754f821101781, type: 3}
   EnemyContainer: {fileID: 994613707}
   PowerContainer: {fileID: 585502898}
+  Asteroid: {fileID: 27046488006181950, guid: c70e40763ef463746a1967bdb8485526, type: 3}
   PowerUps:
   - {fileID: 4488293997966568933, guid: d224e6f9e22bd544db117c3383d181bc, type: 3}
   - {fileID: 8486356770559437158, guid: dcff911782838f04e83a1ee15467bce6, type: 3}
@@ -2245,7 +2246,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.8634794e-20, y: 0, z: 0, w: 2.5e-44}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 5.7492e-41}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0

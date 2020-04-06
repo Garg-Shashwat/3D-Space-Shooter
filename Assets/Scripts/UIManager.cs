@@ -16,6 +16,7 @@ public class UIManager : MonoBehaviour
     Image[] ActiveLife;
 
     GameManager gameManager;
+    SpawnManager spawnManager;
     HighscoreManager highscoreManager;
     void Start()
     {
@@ -23,6 +24,7 @@ public class UIManager : MonoBehaviour
         Score.text = "Score : " + 0;
         RestartImg.gameObject.SetActive(false);
         gameManager = GameObject.Find("Game_Manager").GetComponent<GameManager>();
+        spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
         highscoreManager = GameObject.Find("Canvas").GetComponent<HighscoreManager>();
         if (gameManager == null)
         {
@@ -34,6 +36,10 @@ public class UIManager : MonoBehaviour
         {
             Debug.LogError("HighScoreManager cannot be attached");
         }
+        if (spawnManager == null)
+        {
+            Debug.LogError("SpawnManager cannot be attached");
+        }
     }
 
     public void UpdateScore(int add)
@@ -43,6 +49,7 @@ public class UIManager : MonoBehaviour
             score += add;
             Score.text = "Score : " + score.ToString();
         }
+        spawnManager.kill();
     }
 
     public void UpdateLives(int activelives, int player)
