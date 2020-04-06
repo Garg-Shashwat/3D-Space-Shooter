@@ -153,6 +153,7 @@ MonoBehaviour:
   Enemy: {fileID: 1015864458718546654, guid: 1b4480aa504718e408d754f821101781, type: 3}
   EnemyContainer: {fileID: 994613707}
   PowerContainer: {fileID: 585502898}
+  Asteroid: {fileID: 158072853}
   PowerUps:
   - {fileID: 4488293997966568933, guid: d224e6f9e22bd544db117c3383d181bc, type: 3}
   - {fileID: 8486356770559437158, guid: dcff911782838f04e83a1ee15467bce6, type: 3}
@@ -790,6 +791,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109476372}
   m_CullTransparentMesh: 0
+--- !u!1 &158072853 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 27046488006181950, guid: c70e40763ef463746a1967bdb8485526,
+    type: 3}
+  m_PrefabInstance: {fileID: 1311592232}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &191767711
 GameObject:
   m_ObjectHideFlags: 0
@@ -2245,7 +2252,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.8634794e-20, y: 0, z: 0, w: 2.5e-44}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 5.7492e-41}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -4083,6 +4090,31 @@ PrefabInstance:
     - target: {fileID: 3586964364660592000, guid: c70e40763ef463746a1967bdb8485526,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6112274436912941115, guid: c70e40763ef463746a1967bdb8485526,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6112274436912941115, guid: c70e40763ef463746a1967bdb8485526,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6112274436912941115, guid: c70e40763ef463746a1967bdb8485526,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6112274436912941115, guid: c70e40763ef463746a1967bdb8485526,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6112274436912941115, guid: c70e40763ef463746a1967bdb8485526,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

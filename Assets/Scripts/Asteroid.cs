@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Asteroid : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class Asteroid : MonoBehaviour
     float speed = 20f;
     [SerializeField]
     AudioClip ExplosionClip;
+    [SerializeField]
+    TMP_Text wave_text;
 
     Animator animator;
     AudioSource audiosource;
@@ -28,7 +31,7 @@ public class Asteroid : MonoBehaviour
             Debug.LogError("Audio Source cannnot be attached");
         else
             audiosource.clip = ExplosionClip;
-
+        wave_text.text = "Wave: " + spawnManager.GetWave();
     }
 
     void Update()
