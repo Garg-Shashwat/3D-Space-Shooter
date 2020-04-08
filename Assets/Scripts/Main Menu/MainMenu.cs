@@ -31,12 +31,12 @@ public class MainMenu : MonoBehaviour
     }
     public void LoadSinglePlayer()
     {
-        StartCoroutine(LoadScenes(1));
+        StartCoroutine(LoadScenes(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
     public void LoadCoOp()
     {
-        StartCoroutine(LoadScenes(2));
+        StartCoroutine(LoadScenes(SceneManager.GetActiveScene().buildIndex + 2));
     }
 
     IEnumerator LoadScenes(int index)

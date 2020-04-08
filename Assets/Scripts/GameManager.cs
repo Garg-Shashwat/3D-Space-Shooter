@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
     public void Back()
     {
         Time.timeScale = 1;
-        StartCoroutine(LoadScene(0));
+        StartCoroutine(LoadScene(1));
     }
     public void Quit()
     {
