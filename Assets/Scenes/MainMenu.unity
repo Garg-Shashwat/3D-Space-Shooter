@@ -3213,8 +3213,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highscores:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1827466450}
+  - {fileID: 471873795}
 --- !u!114 &553743639
 MonoBehaviour:
   m_ObjectHideFlags: 0

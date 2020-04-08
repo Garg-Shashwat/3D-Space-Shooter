@@ -15,6 +15,7 @@ public class EnemyController : MonoBehaviour
     UIManager uimanager;
     Animator animator;
     AudioSource audioSource;
+    bool hit = false;
 
     void Awake()
     {
@@ -56,7 +57,7 @@ public class EnemyController : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Player")
+        if(other.tag == "Player" && !hit)
         {
             uimanager.UpdateScore(5);
             PlayerController control = other.GetComponent<PlayerController>();
@@ -64,13 +65,15 @@ public class EnemyController : MonoBehaviour
                 control.ChangeHealth(-1);
             StartCoroutine("Disablecollider");
             StopCoroutine("Firing");
+            hit = true;
         }
-        if(other.tag == "Laser")
+        if(other.tag == "Laser" && !hit)
         {
             Destroy(other.gameObject);
             uimanager.UpdateScore(10);
             StartCoroutine("Disablecollider");
             StopCoroutine("Firing");
+            hit = true;
         }
     }
     IEnumerator Disablecollider()

@@ -21,7 +21,7 @@ public class SpawnManager : MonoBehaviour
     IEnumerator SpawnPowerUp()
     {
         yield return new WaitForSeconds(7f);
-        while (!gameManager.isGameOver && enemyspawned <= maxamount)
+        while (!gameManager.isGameOver && enemyspawned < maxamount)
         {
             yield return new WaitForSeconds(Random.Range(2, 5));
             Vector3 spawn = new Vector3(Random.Range(-9f, 9f), 6.5f, 0);
@@ -34,8 +34,9 @@ public class SpawnManager : MonoBehaviour
     IEnumerator SpawnEnemy()
     {
         yield return new WaitForSeconds(3f);
-        while(!gameManager.isGameOver && enemyspawned <= maxamount)
+        while(!gameManager.isGameOver && enemyspawned < maxamount)
         {
+            Debug.Log(enemyspawned + " " + maxamount);
             Vector3 spawn = new Vector3(Random.Range(-9f, 9f), 6.5f, 0);
             GameObject newEnemy = Instantiate(Enemy, spawn, Quaternion.identity);
             newEnemy.transform.parent = EnemyContainer.transform;
@@ -65,6 +66,7 @@ public class SpawnManager : MonoBehaviour
     public void kill()
     {
         enemykilled++;
+        Debug.Log(enemykilled);
         if (enemykilled >= maxamount)
             EndWave();
     }
