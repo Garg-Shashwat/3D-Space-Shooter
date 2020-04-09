@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1666186674, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 2
+  lastUpdatedAtString: 2020-04-09T16:18:28.900+05:30
+  initializedAtString: 2020-04-09T16:17:20.281+05:30
+  localBranches:
+  - name: master
+    tracking: origin/master
+  - name: v1
+    tracking: origin/v1
+  - name: v1-1
+    tracking: origin/v1-1
+  - name: v1-2
+    tracking: origin/v1-2
+  remoteBranches:
+  - name: origin/master
+    tracking: '[None]'
+  - name: origin/v1
+    tracking: '[None]'
+  - name: origin/v1-1
+    tracking: '[None]'
+  - name: origin/v1-2
+    tracking: '[None]'
+  remotes:
+  - name: origin
+    url: https://github.com/Garg-Shashwat/3D-Space-Shooter.git
+    login: 
+    user: 
+    host: 
+    function: 0
+    token: 
+  localConfigBranches:
+    keys:
+    - master
+    - v1
+    - v1-1
+    - v1-2
+    values:
+    - name: master
+      remote:
+        name: origin
+        url: https://github.com/Garg-Shashwat/3D-Space-Shooter.git
+      trackingBranch: master
+    - name: v1
+      remote:
+        name: origin
+        url: https://github.com/Garg-Shashwat/3D-Space-Shooter.git
+      trackingBranch: v1
+    - name: v1-1
+      remote:
+        name: origin
+        url: https://github.com/Garg-Shashwat/3D-Space-Shooter.git
+      trackingBranch: v1-1
+    - name: v1-2
+      remote:
+        name: origin
+        url: https://github.com/Garg-Shashwat/3D-Space-Shooter.git
+      trackingBranch: v1-2
+  remoteConfigBranches:
+    keys:
+    - origin
+    subKeys:
+    - Values:
+      - master
+      - v1
+      - v1-1
+      - v1-2
+    subKeyValues:
+    - Values:
+      - name: master
+        remote:
+          name: origin
+          url: https://github.com/Garg-Shashwat/3D-Space-Shooter.git
+        trackingBranch: 
+      - name: v1
+        remote:
+          name: origin
+          url: https://github.com/Garg-Shashwat/3D-Space-Shooter.git
+        trackingBranch: 
+      - name: v1-1
+        remote:
+          name: origin
+          url: https://github.com/Garg-Shashwat/3D-Space-Shooter.git
+        trackingBranch: 
+      - name: v1-2
+        remote:
+          name: origin
+          url: https://github.com/Garg-Shashwat/3D-Space-Shooter.git
+        trackingBranch: 
+  configRemotes:
+    keys:
+    - origin
+    values:
+    - name: origin
+      url: https://github.com/Garg-Shashwat/3D-Space-Shooter.git
